@@ -1,0 +1,269 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 960px;
+  background-color: white;
+}
+
+.header {
+  background-color: black;
+  height: 4.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header img {
+  height: 1.6rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+
+}
+
+.header span {
+  color: white;
+  font-size: 1rem;
+  font-family: Helvetica;
+  margin: 0.66rem 0;
+}
+
+.mainbanner {
+  height:25rem;
+  width: 100%;
+  background-image: url("../img/moto.jpeg");
+  background-position: cover;
+  display: flex;
+}
+
+.disclaimer {
+  background-color: black;
+  margin-top: 9rem;
+  width: 22rem;
+  height: 10rem;
+}
+
+
+.disclaimer h6 {
+  font-family: Helvetica;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 0.25rem;
+  color: white;
+
+}
+
+.disclaimer h2 {
+  font-family: Helvetica;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 2rem;
+  color:white;
+}
+
+@media only screen and (max-width: 470px) {
+
+  .mainbanner {
+    height: 15rem;
+  }
+
+  .disclaimer {
+    margin-top: 10rem;
+    width: 100%;
+    height: 5rem;
+  }
+
+  .disclaimer h6 {
+    font-family: Helvetica;
+    font-size: 0.77rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 0.25rem;
+    color: white;
+
+  }
+
+  .disclaimer h2 {
+    font-family: Helvetica;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 2rem;
+    color:white;
+  }
+}
+
+.desktopnav {
+  background-color: firebrick;
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.desktopnav span {
+  margin: 0.75rem 0;
+  color:white;
+}
+
+.mobilenav {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+
+   .desktopnav {
+     display: none;
+
+   }
+
+   .mobilenav {
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     justify-content: space-around;
+     background-color: firebrick;
+     height: 3rem;
+     width: 100%;
+     text-align: center;
+
+   }
+
+   .mobilenav span {
+     margin: 0.75rem 0;
+     color:white;
+   }
+
+}
+
+.catalogmob {
+  display: none;
+}
+
+.catalogdesk {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1024px)
+  {
+  .catalogdesk {
+    display: none;
+}
+
+  .catalogmob {  display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .catalogmob .item {
+    width: 47%;
+    height:14.5rem;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .catalogmob .item img {
+    margin: 2rem 0;
+    height: 9rem;
+    width: 8rem;
+  }
+
+  .catalogmob .item span {
+    height: 1.5rem;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.catalogdesk .item {
+  width: 30%;
+  height:14.5rem;
+  border: 4px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalogdesk .item span {
+  height: 1.5rem;
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.catalogdesk .item img {
+  margin: 2rem 0;
+  height: 9rem;
+  width: 8rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.lh {
+  width: 35%;
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  height: 5rem;
+
+}
+
+.text1 {
+    background-color: black;
+    height: 3rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    color: white;
+
+}
+
+.text2 {
+  height: 1rem;
+  padding-top: 1rem;
+}
+
+.footer {
+  height: 10rem;
+  text-align: left;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
